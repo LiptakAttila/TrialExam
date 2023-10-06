@@ -12,6 +12,7 @@ public class Pirate {
         this.healthPoint = 20;
         this.hasWoodenLeg = false;
     }
+
     public Pirate() {
 
     }
