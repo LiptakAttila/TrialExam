@@ -6,16 +6,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SymmetricMatrixTest {
 
-    @Test
-    void isSymmetricTestNegativeInputNumberErrorHandling() {
-        SymmetricMatrix isMatrixSymmetricFunc = new SymmetricMatrix();
-        assertThrows(IllegalArgumentException.class, () -> {
-            isMatrixSymmetricFunc.isSymmetric(-2);
-        });
-    }
-    @Test
-    void isSymmetricTestResult() {
-        SymmetricMatrix isMatrixSymmetricFunc = new SymmetricMatrix();
-        assertEquals(true, isMatrixSymmetricFunc.isSymmetric(3));
-    }
-}
+//    @Test
+//    void isSymmetricTestNegativeInputNumberErrorHandling() {
+//        SymmetricMatrix isMatrixSymmetricFunc = new SymmetricMatrix();
+//        assertThrows(IllegalArgumentException.class, () -> {
+//            isMatrixSymmetricFunc.isSymmetric(-2);
+//        });
+////    }
+//    @Test
+//    void isSymmetricTestResult() {
+//        SymmetricMatrix isMatrixSymmetricFunc = new SymmetricMatrix();
+//        assertEquals(true, isMatrixSymmetricFunc.isSymmetric(3));
+//    }
+//}

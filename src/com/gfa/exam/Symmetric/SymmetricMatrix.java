@@ -4,16 +4,16 @@ import java.util.Arrays;
 
 public class SymmetricMatrix {
 
-    public boolean isSymmetric(int n) {
-        if (n<0) {
-            throw new IllegalArgumentException("Input number can't be negative number.");
-        }
+    public boolean isSymmetric(int[][] matrix) {
 
-        int[][] multiMatrix = new int[n][n];
+//        if (n<0) {
+//            throw new IllegalArgumentException("Input number can't be negative number.");
+//        }
+        int n = matrix.length;
 
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                if (multiMatrix[i][j] != multiMatrix[j][i]) {
+                if (matrix[i][j] != matrix[j][i]) {
                     return false;
                 }
             }
