@@ -9,11 +9,6 @@ import java.util.List;
 
 public class MostCommonCharacters {
 
-    public static void main(String[] args) throws IOException {
-        String fileName = "C:\\Users\\Dell\\OneDrive\\Bureaublad\\TrialExam\\exam-trial-basics\\countchar.txt";
-        getTwoMostCommonCharacters(fileName);
-    }
-
     public static HashMap<Character, Integer> getTwoMostCommonCharacters(String fileName) throws IOException {
         HashMap<Character, Integer> countCharsMap = new HashMap<>();
         Path filePath = Paths.get(fileName);
