@@ -3,13 +3,13 @@ package com.gfa.exam.Pirate;
 public class Pirate {
     private String name;
     protected int goldAmount;
-    protected int healthPoint;
+    protected int healthPoints;
     private boolean hasWoodenLeg;
 
     public Pirate(String name) {
         this.name = name;
         this.goldAmount = 0;
-        this.healthPoint = 20;
+        this.healthPoints = 20;
         this.hasWoodenLeg = false;
     }
 
@@ -19,18 +19,18 @@ public class Pirate {
 
     public void work() {
         goldAmount += 1;
-        healthPoint -= 1;
+        healthPoints -= 1;
     }
 
     public void party() {
-        healthPoint += 1;
+        healthPoints += 1;
     }
 
     public String toString() {
         if (hasWoodenLeg == true) {
-            return "Hello, I am " + getName() + ". I have a wooden leg and " + getGoldAmount() + " amount of gold.";
+            return "Hello, I'm " + getName() + ". I have a wooden leg and " + getGoldAmount() + " amount of gold.";
         }
-        return "Hello, I am " + getName() + ". I still have my real legs and " + getGoldAmount() + " amount of gold.";
+        return "Hello, I'm " + getName() + ". I still have my real legs and " + getGoldAmount() + " amount of gold.";
     }
 
     public boolean isPoor() {
@@ -49,6 +49,6 @@ public class Pirate {
     }
 
     public int getHealthPoint() {
-        return healthPoint;
+        return healthPoints;
     }
 }

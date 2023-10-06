@@ -9,11 +9,11 @@ public class Captain extends Pirate{
     public void work() {
         super.work();
         goldAmount += 4;
-        healthPoint -= 3;
+        healthPoints -= 3;
     }
 
     @Override
     public void party() {
-        healthPoint += 5;
+        healthPoints += 5;
     }
 }
